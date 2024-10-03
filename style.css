@@ -1,0 +1,90 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    background-color: #1eff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    flex-direction: column;
+}
+h1, h2, h4{
+    font-family: "Kanit" ,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: -27px;
+    color: #2b2a29;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+h4{
+    margin: 0px ;
+}
+
+
+div, section, ::after, ::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav h1{
+    padding-bottom: 40px;
+    color: #ffff;
+}
+
+.base-plate{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+
+}
+
+.part001-plate{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 430px;
+    height: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background: #1eff00;
+    box-shadow: 20px 20px 60px #1ad900,
+                -20px -20px 60px #23ff00;
+    animation-name: slideLeft;            
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+
+}
+
+@keyframes slideLeft {
+    from{
+        transform: translate(-50%, -50%);
+    }
+
+    to{
+        translate: 0 0;
+    }
+}
